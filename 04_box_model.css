@@ -1,0 +1,56 @@
+div {
+  color: white;
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+}
+
+.margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.border {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: violet;
+  border-top-color: darkgoldenrod;  /* 테두리 깎는 것 */
+  border-radius: 10px;
+}
+
+.margin-shorthand-1 {
+  /* 상하좌우를 10px씩 */
+  margin: 10px;
+}
+
+.margin-shorthand-2 {
+  /* 상하/ 좌우 */
+  margin: 10px 20px;
+}
+
+.margin-shorthand-3 {
+  /* 상하/ 좌우/ 하 */
+  margin: 10px 20px 30px;
+}
+
+.margin-shorthand-4 {
+  /* 상하/ 좌우/ 하 / 좌(시계방향)*/
+  margin: 10px 20px 30px 40px;
+}
+
+.align-center {
+  /* 상하는 0(건드리지 않고) 좌우(마진을 반씩 나눠준다;가운데정렬) */
+  margin: 0 auto;
+}
+
+.align-right {
+  /* 왼쪽에 남은 너비를 붙인다. */
+  margin-left: auto;
+}

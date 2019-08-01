@@ -1,0 +1,30 @@
+h1{
+  /* font-size: 2em; h1 기본 폰트 사이즈*/
+  color: mediumaquamarine;
+  /* 디폴트 (16px) 의 50% 가 적용됨 -> 8px */
+  font-size: 50%;
+}
+
+section{
+  /* 디폴트 (16px) 의 50% 가 적용됨 -> 8px */
+  font-size: 50%;
+}
+
+section > h2 {
+  color: gold;
+  /* 부모가 가진 폰트 사이즈의 5배 적용됨 */
+  /* 상속의 영향(section은 8px) -> 8 * 5 -> 40px */
+  font-size: 5em;
+  }
+
+  ul {
+    /* 최상단에 있는 default의 영향을 받음 */
+    /* 루트(디폴트) 16px 의 2배 -> 32px 상속의 영향 x)*/
+    font-size: 2rem;
+  }
+  
+  #box{
+    width: 50px;
+    height: 100px;
+    background-color: lightcoral;
+  }

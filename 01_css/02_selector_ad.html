@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selector Advance</title>
+  <link rel="stylesheet" href="02_selector_ad.css">
+</head>
+<body>
+  <!-- 그룹선택자 -->
+  <h1>그룹선택자 적용</h1>
+  <p class="binch">그룹선택자 적용</p>
+
+  <!-- 
+    인접 형제 선택자 
+    문법: S1 + S2 { attribute : value; } == body라는 같은 부모를 가진 형제들
+    같은 부모를 가지고 S1 뒤에 오는 S2에 적용한다.
+  -->
+  <div class="red">RED:)</div>
+  <div class="blue">BLUEEEE</div>
+  <div>PURPLE</div>
+
+
+  <!-- 
+    일반 형제 선택자
+    문법: S1 ~ S2 { attribute : value; }
+    같은 부모를 가지고 S1 뒤에 오는 S2에 적용한다.
+    (바로 뒤에 올 필요 없음)
+   -->
+   <h2>일반 형제 선택자</h2>
+   <p>형제1</p>
+   <p>형제2</p>
+
+   <!-- ★★★★★자식선택자☆☆☆☆☆ -->
+   <ol class="parent">
+     <ul>
+       <li>ol > ul > li</li>  <!-- ol의 자식은 ul의 자식은 li-->
+     </ul>
+   </ol>
+   <ol class="parent">
+     <li>ol > li</li>
+   </ol>
+
+   <!-- 후손선택자 -->
+   <ol class="ancestor">
+    <ul>
+      <li>ol > ul > li</li>  <!-- ol의 자식은 ul의 자식은 li-->
+    </ul>
+  </ol>
+  <ol class="ancestor">
+    <li>ol > li</li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* 전체선택자 */
+* {
+  color: red;
+
+}
+
+/* 태그선택자 */
+h1 {
+  color: gold;
+}
+
+/* 클래스선택자 */
+.pink {
+  color: pink;
+}
+.yellow{
+  color: yellow;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* 아이디선택자 */
+#green {
+  color: green;
+}
+
+#purple {
+  color: purple;
+}
+
+#orange{
+  color: orangered !important;  /* !important는 무조건 이걸로 하겠다 */
+  color: brown;
+}

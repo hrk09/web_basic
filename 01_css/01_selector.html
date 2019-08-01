@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selector</title>
+  <link rel="stylesheet" href="01_selector.css">
+</head>
+<body>
+  <p>빨간색</p>
+  <h1>태그선택자</h1>  
+  <!-- css에서 전체선택자로 빨간색을 했으므로 다 빨간색 -->
+  <!-- 그러나 전체선택자에서 h1의 color를 따로 다른색으로 설정하면 red가 취소되고 새로운 색이 입혀짐 -->
+  <h2 class="pink" >클래스선택자</h2>
+  <h3 id="green">아이디 선택자</h3> <!-- html 문서에서 단 하나의 ID만 있음-->
+  <h3 id="purple" class="pink">아이디 > 클래스 </h3>  <!-- 아이디가 클래스보다 우선순위 -->
+  <h1 class="pink">클래스 > 태그</h1>
+
+  <!-- 
+    span 태그와 div 태그는 모두 의미는 없으나 마크업을 해야 css를 적용시킬 수 있기
+    때문에 활용된다. 특정한 곳을 지정해야하고, 따라서 선택자가 필요하게 되고, 선택자
+    를 잡기 위해서는 마크업이 필요한 것이다.
+   -->
+  <p><span class="pink">핑크핑크</span>, <span class="yellow">노랑노랑</span></p>
+
+  <p class="bold yellow pink">나는 무슨색?</p>
+  <!-- 
+    아래처럼 pink가 마지막에 쓰여졌으나, css 코드에서 yellow가 마지막으로 선언되었으므로 
+    노란색으로 적용됨
+  -->
+  <p class="bold yellow pink" id="orange" style="color: salmon">가장 강한 우선순위</p>
+  <!-- 
+
+   -->
+</body>
+</html>

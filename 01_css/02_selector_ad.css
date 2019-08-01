@@ -1,0 +1,40 @@
+/* ★★그룹선택자★★ */
+/* 정의되는 전부 다 정의시키겠다. */
+h1, h2, h3, h4, h5, h6, .binch {
+  color: chocolate;
+}
+
+/* 인접 형제 선택자 */
+.red + .blue + div{
+  background-color: purple;
+}
+
+/* 일반 형제 선택자 */
+h2 ~ p{
+  color: mediumseagreen;
+}
+
+/* ★★자식 선택자★★ : parent 밑에 있는 li한테 적용하겠다*/
+.parent > li {
+  color: red;
+}
+
+/* ★★후손 선택자★★ : 모든 자식들한테 적용시키겠다 */
+.ancestor li {
+  color: blue;
+}
+
+/* div setting */
+div{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>음악페스티벌</title>
+</head> <!-- table data에만 boder 효과를 주겠다-->
+<style>
+  td {
+    border: 1px solid cornflowerblue
+  }
+</style>
+
+<body>
+  <table summary="락 페스티벌 시간표이며 내부소극장, 외부 잔디마당...">  <!-- summary는 table에 관한 설명을 작성해주는 것-->
+    <caption> <!--테이블의 제목을 명시적으로 표시하고, 약간의 스타일 변화도 있음-->
+      <h1> 2019 타임테이블 </h1>
+    </caption>
+    <!-- table head -->
+    <thead>
+      <tr>
+        <th>TIME</th>
+        <th>INDOOR</th>
+        <th colspan="2">OUTDOOR</th> <!-- colomn을 두개 먹겠다-->
+      </tr>
+    </thead>
+
+    <!-- table data -->
+    <tbody>
+      <tr>
+        <td></td>
+        <td>소극장</td>
+        <td>잔디마당</td>
+        <td>대공연장</td>
+      </tr>
+      <tr>
+        <td>10:00</td>
+        <td rowspan="2">안녕하신가영</td>
+        <td></td>
+        <td>10CM</td>
+      </tr>
+      <tr>
+        <td>13:00</td>
+        <td rowspan="2">선우정아</td>
+        <td rowspan="2">참깨와 솜사탕</td>
+      </tr>
+      <tr>
+        <td>15:00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>17:00</td>
+        <td>크러쉬</td>
+        <td></td>
+        <td>폴킴</td>
+      </tr>
+    </tbody>
+
+  </table>
+</body>
+
+</html>

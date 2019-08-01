@@ -1,0 +1,36 @@
+<!--table 태그 활용하기-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lunch</title>
+  <style>
+    th {
+      border: 1px solid cadetblue
+
+    }
+  </style>
+</head>
+<body>
+  <table border="1px solid cadetblue">
+    <tr>  <!-- table row(표 가로줄)-->
+      <th></th>  <!-- 가장 첫줄에 있는 4개의 header(표 맨윗줄)-->
+      <th>월</th>  <!-- td라고 적어도 괜찮으나, header 전용(bold체 등) 기능이 없어질뿐-->
+      <th>화</th>
+      <th>수</th>
+    </tr>
+    <tr>
+      <td>A코스</td>
+      <td rowspan="2">짬뽕</td>  <!-- row 2개 먹는다 -->
+      <td colspan="2">초밥</td>  <!-- column 2개 먹는다-->
+    </tr>
+    <tr>
+      <td>B코스</td>
+      <td>김치찌개</td>
+      <td>삼계탕</td>  <!-- 상단에서 이미 rowspan으로 설정했기 때문에 3개만 입력해도 됨-->
+    </tr>
+  </table>
+</body>
+</html>

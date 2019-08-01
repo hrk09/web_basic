@@ -1,0 +1,51 @@
+<!-- ★★★★ form 은 굉장히 중요합니다 ★★★★ -->
+<!-- 사용자의 input을 받는 것을 form이라고 함(로그인, 검색, 좋아요 etc) -->
+<!-- form 에서는 어디로 제출할지, 어떻게 제출할지를 생각해야 함 -->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+</head>
+<body>
+  <!-- action은 form을 어디로 제출할 지 정해주는 것 -->
+  <form action="#"> <!-- action에 #을 넣으면 아무데도 보내지 않겠다는 뜻-->
+  <!-- action에 아무것도 지정하지 않으면 http://127.0.0.1:5500/00_html/06_form.html -->
+
+    <!-- text 받는 창을 생성(어떠한 text라도 받을 수 있음) -->
+    TEXT: <input type="text" placeholder="검색어를 입력해주세요"/><br/>
+    NUMBER: <input type="number" disabled/><br/>  <!-- disabled="false" 넘버 입력창 입력 불가--> 
+    PASSWORD: <input type="password"/><br/>
+    E-MAIL: <input type="email"/><br/>
+    <!-- value라는 어트리뷰트는 input이 갖고 있는 값(default)-->
+    DATE: <input type="date" name="b-day" value="2019-08-01"/><br/>
+
+    <!-- 사용자가 language(name)의 어떤걸 선택했니? -->
+    <!-- input에 name 값을 설정하지 않으면, 관련 내용이 &뒤 주소창에 보이지 않음 -->
+    <!-- radio 항목은 여러개 중에 하나만 선택(단일) 가능 -->
+    <input type="radio" name="language" value="1"/>HTML<br/>
+    <input type="radio" name="language" value="2" checked/>CSS<br/> <!-- checked="true" -->
+    <input type="radio" name="language" value="3"/>JS<br/>
+  <hr/>
+
+    <select name="country">
+      <option value="1">한국</option>
+      <option value="2" selected>중국</option>
+      <option value="3" disabled>일본</option>
+    </select><br/>
+
+    <!-- checkbox는 중복선택가능 -->
+    <input type="checkbox" name="option" value="1">
+    <input type="checkbox" name="option" value="2"><br/>
+
+    <input type="color" value="#FF6600"><br/>
+
+    <!-- 제출하기 버튼만들기 -->
+    <input type="submit" value="제출하실?"/>
+  </form>
+</body>
+</html>

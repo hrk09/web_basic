@@ -1,0 +1,28 @@
+/* body {
+  background-image: url(http://hdwpro.com/wp-content/uploads/2018/10/Nice-Galaxy-Wallpaper.jpg);
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  /* background-size: cover;
+} */
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+span {
+  /* font-size: 150%;
+  font-family: 'Courier New';
+  font-weight: bold; */
+  
+  /* font-family, font-size는 필수 */
+  font: 'Courier New', 2rem, bold;
+  border: solid;
+}
+
+
